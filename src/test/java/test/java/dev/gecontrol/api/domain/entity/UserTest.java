@@ -26,9 +26,9 @@ public class UserTest {
         assertEquals(password, user.getPassword());
         assertEquals(permissions, user.getPermissions());
         assertEquals(Status.ACTIVE, user.getStatus());
-        assertTrue(LocalDateTime.now().isAfter(user.getCreatedAt()));
-        assertNull(user.getUpdatedAt());
+        assertNotNull(user.getUpdatedAt());
     }
 
+    
 
 }

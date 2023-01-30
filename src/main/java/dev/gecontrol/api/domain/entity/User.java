@@ -18,6 +18,7 @@ public class User {
         this.password = password;
         this.permissions = permissions;
         this.createdAt = LocalDateTime.now();
+        this.updatedAt = LocalDateTime.of(2999, 1, 1, 1, 1, 1);
         this.status = status.ACTIVE;
     }
 
